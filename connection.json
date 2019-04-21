@@ -1,0 +1,52 @@
+{
+  "name": "basic-network",
+  "version": "1.0.0",
+  "client": {
+    "organization": "GenomePlatform",
+    "connection": {
+      "timeout": {
+        "peer": {
+          "endorser": "300"
+        },
+        "orderer": "300"
+      }
+    }
+  },
+  "channels": {
+    "data-permission-channel": {
+      "orderers": [
+        "orderer.kit.com"
+      ],
+      "peers": {
+        "peer0.genome-platform.kit.com": {}
+      }
+    }
+  },
+  "organizations": {
+    "GenomePlatform": {
+      "mspid": "GenomePlatformMSP",
+      "peers": [
+        "peer0.genome-platform.kit.com"
+      ],
+      "certificateAuthorities": [
+        "ca.kit.com"
+      ]
+    }
+  },
+  "orderers": {
+    "orderer.kit.com": {
+      "url": "grpc://193.196.37.152:7050"
+    }
+  },
+  "peers": {
+    "peer0.genome-platform.kit.com": {
+      "url": "grpc://193.196.37.152:7051"
+    }
+  },
+  "certificateAuthorities": {
+    "ca.kit.com": {
+      "url": "http://193.196.37.152:7054",
+      "caName": "ca.kit.com"
+    }
+  }
+}
