@@ -1,4 +1,4 @@
-### Simple Node application to query and invoke the [Genome Data Sharing Blockchain](https://git.scc.kit.edu/undxr/fabric-multihost-setup)
+### Simple Node application to query and invoke the [Genome Data Sharing Blockchain](https://github.com/ma-rius/fabric-multihost-setup)
 (Adapted from Hyperledger Fabric [fabcar tutorial](https://hyperledger-fabric.readthedocs.io/en/latest/write_first_app.html))
 
 To install the required packages, run
